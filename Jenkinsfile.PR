@@ -6,7 +6,7 @@ pipeline {
             agent { label 'jenkins' }
             steps {
                 sh 'echo TEST'
-		sh 'currentBuild.result = 'UNSTABLE'
+		currentBuild.result = 'UNSTABLE'
             }
         }
     }
